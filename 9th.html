@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+		function unique(arr1,arr2,uniqueArr) {
+			for(var i=0; i<arr1.length; i++) {
+				flag = 0;
+				for(var j=0; j<arr2.length; j++) {
+					if(arr1[i] === arr2[j]) {
+						arr2.splice(j,1);
+						j--;
+						flag = 1;
+					}
+				}
+
+				if(flag == 0) {
+					uniqueArr.push(arr1[i]);
+				}
+			}
+			uniqueArr.push(arr2);
+			return uniqueArr;
+		}
+
+		var arr1 = [56, 25, 14, 49, 20];
+		var arr2 = [14, 56, 5, 20, 30];
+
+		var uniqueArr = [];
+
+		document.write("Unique elements in the two arrays are : ");
+		document.write(unique(arr1,arr2,uniqueArr).flat());
+		</script>
+	</body>
+</html>

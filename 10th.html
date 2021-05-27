@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+   <script>
+     function vowel_count(str1)
+ {
+   var vowel_list = 'a';
+   var acount = 0;
+   str1 = str1.toLowerCase(); //converted to lowercase
+   
+   for(var x = 0; x < str1.length ; x++)
+   {
+     if (vowel_list.indexOf(str1[x]) !== -1)
+     {
+       acount += 1;
+     }
+
+   }
+   console.log('A: = '+acount);
+
+
+   var vowel_list = 'e';
+   var ecount = 0;
+   for(var x = 0; x < str1.length ; x++)
+   {
+     if (vowel_list.indexOf(str1[x]) !== -1)
+     {
+       ecount += 1;
+     }
+   }
+   console.log('E: = '+ecount);
+
+
+ var vowel_list = 'i';
+ var icount = 0;
+ for(var x = 0; x < str1.length ; x++)
+ {
+   if (vowel_list.indexOf(str1[x]) !== -1)
+   {
+     icount += 1;
+   }
+ }
+ console.log('I: = '+icount);
+
+
+var vowel_list = 'o';
+var ocount = 0;
+for(var x = 0; x < str1.length ; x++)
+{
+  if (vowel_list.indexOf(str1[x]) !== -1)
+  {
+    ocount += 1;
+  }
+}
+console.log('O: = '+ocount);
+
+
+var vowel_list = 'u';
+var ucount = 0;
+for(var x = 0; x < str1.length ; x++)
+{
+  if (vowel_list.indexOf(str1[x]) !== -1)
+  {
+    ucount += 1;
+  }
+}
+console.log('U: = '+ucount);
+}
+console.log(vowel_count("Good Morning. Welcome to DAE Hotel"));
+   </script>
+  </body>
+</html>
